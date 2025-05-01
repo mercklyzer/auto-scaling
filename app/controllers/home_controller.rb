@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   end
 
   def stress_cpu
-    duration = 60 # seconds
+    duration = 60*5 # seconds
     end_time = Time.now + duration
 
     while Time.now < end_time
